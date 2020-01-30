@@ -1,0 +1,32 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+body {
+  background: #282a36;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-bottom: 1 solid #333;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav a {
+  margin: 30px;
+  color: aliceblue;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+}
+header nav :hover {
+  color: #77aaff;
+  transition: color 200ms;
+}
