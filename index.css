@@ -1,3 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+:root {
+  --color-green: rgb(127, 255, 0);
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -27,6 +33,77 @@ header nav a {
   text-decoration: none;
 }
 header nav :hover {
-  color: #77aaff;
+  color: var(--color-green);
+  transition: color 200ms;
+}
+
+article p {
+  text-align: center;
+  color: aliceblue;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 500px;
+  margin: 0px auto;
+}
+
+.titulo {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  background: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  margin: 30px;
+  color: rgb(143, 7, 201);
+  text-decoration: none;
+}
+
+footer :hover {
+  color: var(--color-green);
+  transition: color 200ms;
+  text-decoration: underline;
+}
+article ul li {
+  display: inline;
+}
+
+article ul li {
+  text-align: center;
+  color: rgb(251, 208, 0);
+  font-size: 18px;
+  line-height: 28px;
+  margin: 10px;
+}
+
+.empurra {
+  margin-left: 550px;
+}
+
+article img {
+  margin-top: 20px;
+  position: relative;
+  margin-left: 600px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 5px solid rgb(251, 208, 0);
+}
+article p a {
+  color: rgb(143, 7, 201);
+}
+
+.efeito:hover {
+  color: var(--color-green);
   transition: color 200ms;
 }
