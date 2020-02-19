@@ -67,17 +67,6 @@ footer {
   left: 0;
 }
 
-footer a {
-  margin: 30px;
-  color: rgb(143, 7, 201);
-  text-decoration: none;
-}
-
-footer :hover {
-  color: var(--color-green);
-  transition: color 200ms;
-  text-decoration: underline;
-}
 article ul li {
   display: inline-block;
 }
@@ -107,4 +96,115 @@ article p a {
 .efeito:hover {
   color: var(--color-green);
   transition: color 200ms;
+}
+
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.cards {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  margin: 0 auto;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card_roxo {
+  margin: 22px;
+  padding: 5px;
+  text-align: center;
+  width: 500px;
+  height: 493px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#bordas :hover {
+  transition: color 200ms;
+  border: 2px solid green;
+}
+
+.card__content {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.card__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin-top: 40%;
+  border-radius: 5%;
+  padding: 5px;
+  filter: brightness(80%);
+  background-color: #282a36;
+}
+
+footer a {
+  margin: 30px;
+  color: rgb(143, 7, 201);
+  text-decoration: none;
+}
+
+footer :hover {
+  color: var(--color-green);
+  transition: color 200ms;
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: aliceblue;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.maximize {
+  background-color: aliceblue;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .max-modal {
+  color: black;
+  position: absolute;
+  right: 32px;
+  top: 8px;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  top: 5%;
+  position: absolute;
 }
